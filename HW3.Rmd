@@ -1,9 +1,29 @@
 ---
 title: "HW3"
-author: "林茂廷"
-date: "5/30/2019"
-output: html_document
+output: 
+  html_document: 
+    toc: true
+    toc_depth: 1
+    number_sections: false
+    toc_float:
+      collapsed: true
+      smooth_scroll: false
+params:
+  name: [李欣怡,鄭郁馨,林昭芳,林妤洵]
+  id: [710761131,710761107,710661126,710661127]
+  group: "team K"
+  url: ""
 ---
+請依狀況更改上面的name,id及group（分別代表組員姓名，學號及組號），但請勿更改下面三行的設定。  
+
+***
+
+姓名：`r params$name`  
+學號：`r params$id`  
+組號：`r params$group`  
+網頁：`r params$url` 
+
+***
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
